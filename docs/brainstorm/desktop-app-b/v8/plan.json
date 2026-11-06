@@ -1,0 +1,293 @@
+{
+  "title": "按鍵輔助 B 整合版｜設定檢查與詞綴篩選",
+  "version": "v8",
+  "stage": "plan_review",
+  "summary": "整合首頁設定檢查、詞綴篩選與多群組，並調整卷軸定位及快捷鍵一覽。",
+  "audience": "使用 PoE 1 國際服繁體中文介面的按鍵輔助使用者。",
+  "goal": "打開首頁就知道哪個功能需要補設定。在裝備製作輸入詞綴關鍵字，選定候選後用上下限和群組表達達標條件。",
+  "notice": "v8 待審閱。v6 已確認進入規劃，v8 納入新提出的兩項刪除，正式擷取方式列為設計說明。",
+  "journey": [
+    {
+      "title": "首頁檢查設定",
+      "detail": "先看紅框缺漏。傳送卷軸缺 X、Y 可到「滑鼠與按鍵」的卷軸功能卡補齊。藥劑 2 尚未指定偵測點時可到藥劑與偵測設定。"
+    },
+    {
+      "title": "用關鍵字加入詞綴",
+      "detail": "在改造石洗詞綴上方新增群組和條件，輸入「火焰」，選「+#% 火焰抗性（顯性）」，再輸入最小 30、最大 45。若只在意下限，可留空最大值。"
+    },
+    {
+      "title": "組合多群組",
+      "detail": "用必須命中指定火抗，排除最大魔力，以至少命中 N 條接受生命或能量護盾，再用加權總和衡量火抗和生命。製作以群組結果判斷是否達標。"
+    },
+    {
+      "title": "設定顏色偵測點",
+      "detail": "預覽可直接編輯 X、Y，或在該列按「模擬擷取」填入示例座標及顏色。正式版規劃先選點位，再將滑鼠移到遊戲內容區要偵測的像素，按設定的擷取快捷鍵，同時記下 X、Y 和 RGB。以遊戲內容區左上角為 (0, 0)，向右為 X，向下為 Y。"
+    }
+  ],
+  "preview": {
+    "caption": "靜態示意呈現首頁及裝備製作。七頁操作可開啟同目錄的 interactive-preview.html。",
+    "html": "<style>\n.mock{max-width:1140px;margin:auto;color:#19283b;line-height:1.5}\n.mock *{box-sizing:border-box}\n.mock h1,.mock h2,.mock h3,.mock p{margin:0}.mock h1{font-size:clamp(22px,4vw,30px)}.mock h2{font-size:20px}.mock h3{font-size:16px}\n.mock p,.mock small{color:#4d6276}.mock .note{margin:8px 0 14px}.mock .eyebrow{font-size:12px;font-weight:700;letter-spacing:.08em}\n.screen{display:grid;grid-template-columns:170px minmax(0,1fr);border:1px solid #cad7e3;border-radius:14px;overflow:hidden;background:#f3f6f9;margin:14px 0 24px}\n.rail{background:#162638;color:#dce8f3;padding:18px 12px}.rail b{display:block;color:white;margin:0 0 14px;padding:5px 8px}.rail span{display:block;padding:7px 8px;border-radius:6px;font-size:14px}.rail .active{background:#294554;color:#aef0e3;border-left:3px solid #6ed6c0}\n.mock .content{padding:20px;min-width:0}.mock .cards,.mock .groups{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}\n.status-card,.rule,.block,.score{border:1px solid #cbd8e4;background:white;border-radius:9px;padding:12px;min-width:0}.mock .block{margin-top:12px}\n.mock .missing{border:2px solid #b43b42;background:#fff7f7}.mock .ready{border:2px solid #238253;background:#f5fdf8}\n.mock .missing strong{color:#982f36}.mock .ready strong{color:#176241}.mock .jump{display:block;margin-top:8px;font-size:13px;color:#155e75;font-weight:650}\n.mock .rule-top,.mock .row,.mock .bar{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap}\n.mock .rule-top{margin-bottom:8px}.mock .wide{grid-column:1/-1}.mock .tag{font-size:12px;color:#40586d;background:#eaf0f5;border-radius:5px;padding:2px 6px}\n.mock .search{padding:8px 10px;border:2px solid #2a7d81;border-radius:7px 7px 0 0;color:#183846;background:#fff;margin-top:10px}\n.mock .results{border:1px solid #cbd8e4;border-top:0;border-radius:0 0 7px 7px;margin:0 0 10px;padding:0;list-style:none}.mock .results li{padding:7px 9px}.mock .results li+li{border-top:1px solid #e5edf3}.mock .results .selected{background:#e6f6f2}.mock .results .tag{display:inline-block;margin-right:5px}\n.mock .inputs{display:flex;gap:6px;flex-wrap:wrap}.mock .inputs span,.mock .control{font-size:13px;padding:5px 8px;border:1px solid #bdccdb;border-radius:6px;background:#fff;display:inline-block}.mock .control{color:#225c65;font-weight:650}\n.mock .score{font-size:14px;background:#eaf6f0;border-color:#abd2bc;margin-top:10px}.mock .score b{color:#176241}\n@media(max-width:650px){.screen{grid-template-columns:1fr}.rail{padding:8px}.rail b{margin:0;padding:4px 8px}.rail span{display:none}.rail .active{display:inline-block;margin-left:5px}.mock .content{padding:12px}}\n@media(max-width:430px){.mock .cards,.mock .groups{grid-template-columns:minmax(0,1fr)}}\n</style>\n<main class=\"mock\">\n  <p class=\"eyebrow\">按鍵輔助 · B 整合版 v8 · 靜態示意</p>\n  <section class=\"screen\" aria-labelledby=\"overview-title\">\n    <aside class=\"rail\" aria-label=\"應用程式導覽\"><b>按鍵輔助</b><span class=\"active\">總覽</span><span>滑鼠與按鍵</span><span>藥劑與偵測</span><span>技能與地雷</span><span>背包與倉庫</span><span>裝備製作</span><span>座標與配置</span></aside>\n    <div class=\"content\">\n      <div class=\"bar\"><h1 id=\"overview-title\">設定檢查</h1><div class=\"inputs\"><span>暫停全部</span><span>停止全部</span></div></div>\n      <p class=\"note\">紅框有設定缺漏，綠框已設定。以下為示例，依目前所選功能的必要項目檢查。</p>\n      <div class=\"cards\">\n        <article class=\"status-card missing\"><strong>未設定</strong><h3>使用傳送卷軸</h3><small>缺少卷軸位置 X、Y</small><span class=\"jump\">前往滑鼠與按鍵 ›</span></article>\n        <article class=\"status-card missing\"><strong>未設定</strong><h3>藥劑 2 效果偵測</h3><small>尚未選擇偵測點</small><span class=\"jump\">前往藥劑與偵測 ›</span></article>\n        <article class=\"status-card ready\"><strong>已設定</strong><h3>滑鼠連點</h3><small>觸發鍵已設定 · 無需座標</small><span class=\"jump\">檢視滑鼠與按鍵 ›</span></article>\n        <article class=\"status-card ready\"><strong>已設定</strong><h3>藥劑 1 效果偵測</h3><small>輸出鍵、點位座標與有效顏色已設定</small><span class=\"jump\">檢視顏色偵測定位 ›</span></article>\n      </div>\n    </div>\n  </section>\n  <section class=\"screen\" aria-labelledby=\"craft-title\">\n    <aside class=\"rail\" aria-label=\"應用程式導覽\"><b>按鍵輔助</b><span>總覽</span><span>滑鼠與按鍵</span><span>藥劑與偵測</span><span>技能與地雷</span><span>背包與倉庫</span><span class=\"active\">裝備製作</span><span>座標與配置</span></aside>\n    <div class=\"content\">\n      <h1 id=\"craft-title\">裝備製作</h1>\n      <div class=\"block\">製作控制、限制與紀錄</div>\n      <section class=\"block\" aria-labelledby=\"rules-title\">\n        <div class=\"bar\"><h2 id=\"rules-title\">詞綴條件與比對規則</h2><span class=\"control\">＋ 新增群組</span></div>\n        <p class=\"note\">所有啟用的群組都通過才算達標。以下群組和數值為示例。</p>\n        <div class=\"groups\">\n          <article class=\"rule wide\">\n            <div class=\"rule-top\"><h3>必須命中</h3><span class=\"tag\">群組 1</span></div>\n            <div class=\"search\">搜尋詞綴　火焰</div>\n            <ul class=\"results\" aria-label=\"火焰的搜尋結果示例\">\n              <li class=\"selected\"><span class=\"tag\">顯性・後綴</span> +#% 火焰抗性</li>\n              <li><span class=\"tag\">固定</span> +#% 火焰抗性</li>\n              <li><span class=\"tag\">顯性・前綴</span> 傷害穿透 #% 火焰抗性</li>\n            </ul>\n            <div class=\"row\"><strong>選定　+#% 火焰抗性（顯性）</strong><div class=\"inputs\"><span>最小值 30%</span><span>最大值 45%</span></div></div>\n          </article>\n          <article class=\"rule\"><div class=\"rule-top\"><h3>排除</h3><span class=\"tag\">群組 2</span></div><p>任一條命中就淘汰</p><small>例如排除顯性最大魔力</small></article>\n          <article class=\"rule\"><div class=\"rule-top\"><h3>至少命中 1 條</h3><span class=\"tag\">群組 3</span></div><p>最大生命 ≥ 60 或最大能量護盾 ≥ 30</p></article>\n          <article class=\"rule wide\"><div class=\"rule-top\"><h3>加權總和</h3><span class=\"tag\">群組 4</span></div><div class=\"row\"><span>火焰抗性 × 1 ＋ 最大生命 × 0.5</span><div class=\"inputs\"><span>最低分 70</span><span>最高分 —</span></div></div><div class=\"score\">示例物品　火焰抗性 35%、最大生命 80 → <b>75 分 · 本群組通過</b></div></article>\n        </div>\n      </section>\n      <section class=\"block\"><h2>改造石洗詞綴</h2><p>使用上方詞綴群組判斷結果。</p></section>\n    </div>\n  </section>\n</main>"
+  },
+  "scope": {
+    "confirmed": [
+      {
+        "id": "R16",
+        "title": "首頁按設定狀態顯示紅框與綠框",
+        "detail": "首頁優先顯示各功能的按鍵、座標與偵測點是否設定齊全。缺必要設定顯示紅框，已設定好顯示綠框。"
+      },
+      {
+        "id": "R17",
+        "title": "詞綴規則移到改造石洗詞綴上方",
+        "detail": "裝備製作頁先顯示「詞綴條件與比對規則」，接著顯示「改造石洗詞綴」。"
+      },
+      {
+        "id": "R18",
+        "title": "詞綴模糊搜尋、選取與上下限",
+        "detail": "以 PoEDB 繁中 PoE 1 詞綴建立搜尋目錄。輸入部分文字即可選出詞綴。可比較的數值分別有最小值及最大值。"
+      },
+      {
+        "id": "R19",
+        "title": "交易站式多群組",
+        "detail": "同一份製作條件可加入多個群組，包含必須命中、排除、至少命中 N 條、加權總和。"
+      },
+      {
+        "id": "R20",
+        "title": "座標與配置刪除傳送卷軸",
+        "detail": "「背包與卷軸定位」改名「背包定位」，只顯示背包兩角。"
+      },
+      {
+        "id": "R21",
+        "title": "總覽刪除顯示主視窗",
+        "detail": "移除「顯示主視窗快捷鍵」，卡片改名「快捷鍵一覽」。"
+      }
+    ],
+    "proposed": [
+      {
+        "id": "P16",
+        "title": "缺漏優先與定位入口",
+        "detail": "紅框置前並列出欄位或點位名稱。點卡片可開啟對應設定。依目前模式檢查必填依賴。已停用、暫停或遊戲未連線分開標示，避免和設定完整度混在一起。"
+      },
+      {
+        "id": "P17",
+        "title": "PoEDB 本機詞綴索引",
+        "detail": "以 PoEDB 詞綴索引、All 和相關分類頁盤點覆蓋，記錄來源及資料版本。相同詞義的不同階級合成一個候選，保留可區分的來源與原始階級。用本機資料查詢，資料更新失敗時可繼續用上一個已驗證版本。"
+      },
+      {
+        "id": "P18",
+        "title": "區分能搜尋與能比對",
+        "detail": "候選附顯性、固定等來源標籤。只在已確認能從繁中物品文字辨識時啟用數值條件。多數值詞綴須標明比對欄位，無數值詞綴可做有無判斷。可辨識但不會被目前方式重擲的詞綴加註來源或適用性。"
+      },
+      {
+        "id": "P19",
+        "title": "群組合併與數值判定",
+        "detail": "所有啟用群組皆通過才達標。上下限含邊界，兩欄皆空時檢查是否存在，最小值大於最大值時提示。排除群組中任一條符合就淘汰。至少命中以條件計數，每條最多算一次。加權群組按詞綴值乘權重後加總，與群組上下限比較。已確定缺少的詞綴計 0，讀取或數值辨識失敗則顯示無法判定。"
+      },
+      {
+        "id": "P20",
+        "title": "保留既有條件的語意",
+        "detail": "以同一份規則供改造、混沌與重鑄＋點金引用。對應明確的舊條件可轉成群組，詞綴名／階級及無法安全轉換的條件須保留原文供核對。"
+      },
+      {
+        "id": "P21",
+        "title": "卷軸位置放在使用傳送卷軸功能卡",
+        "detail": "在滑鼠與按鍵直接設定卷軸 X、Y，讓卷軸功能仍有可用的定位欄位。"
+      }
+    ],
+    "out": [
+      "交易物品列表、查價、交易帳號串接。",
+      "舊工具完整移植、遊戲擷取與全域送鍵、實際使用通貨、其他 v5 功能的執行引擎。"
+    ]
+  },
+  "acceptance": [
+    {
+      "id": "A16-1",
+      "requirement": "R16",
+      "scenario": "留空傳送卷軸的 Y，只設定 X 與觸發鍵，再補上有效 Y。",
+      "expected": "首頁先顯示紅框及缺少 Y，補齊必填設定後轉綠。"
+    },
+    {
+      "id": "A16-2",
+      "requirement": "R16",
+      "scenario": "藥劑槽有輸出鍵，但引用的偵測點被刪除或缺必要顏色。另有只需按鍵的功能已完成綁定。",
+      "expected": "藥劑槽顯示紅框及具體原因。只需按鍵的功能保持綠框。"
+    },
+    {
+      "id": "A17",
+      "requirement": "R17",
+      "scenario": "打開裝備製作頁，從製作控制向下查看。",
+      "expected": "詞綴條件與比對規則位在改造石洗詞綴正上方。"
+    },
+    {
+      "id": "A18-1",
+      "requirement": "R18",
+      "scenario": "輸入「火焰」，在候選中選顯性的 +#% 火焰抗性。",
+      "expected": "清單顯示火焰抗性及其他火焰相關詞綴。選取後呈現可編輯的最小值與最大值。"
+    },
+    {
+      "id": "A18-2",
+      "requirement": "R18",
+      "scenario": "對同一條詞綴分別測最小值 30、最大值 45，以及 30 至 45。",
+      "expected": "只填最小值時 29 不符、30 通過。只填最大值時 45 通過、46 不符。兩欄都填時僅 30 至 45 通過。"
+    },
+    {
+      "id": "A18-3",
+      "requirement": "R18",
+      "scenario": "對照 PoEDB 的 All 和相關分類索引抽查一般詞綴、工藝和固定詞綴，並檢查來源覆蓋清單。",
+      "expected": "資料匯入逐類列出納入數和例外。相同詞義的階級集中呈現，不同來源仍能區分。缺少來源、無法解析或無法比對的項目可查明原因。"
+    },
+    {
+      "id": "A19-1",
+      "requirement": "R19",
+      "scenario": "建立必須火抗、排除最大魔力、生命或能量護盾至少一條、加權至少 70 分的群組。用火抗 35%、最大生命 80、無最大魔力的物品文字測試。",
+      "expected": "四組均通過。若增加一條符合排除條件的最大魔力，整體改為不達標。"
+    },
+    {
+      "id": "A19-2",
+      "requirement": "R19",
+      "scenario": "設定火抗權重 1、最大生命權重 0.5，先將群組門檻設為 70，再提高到 76。",
+      "expected": "火抗 35、最大生命 80 的加權總和為 75，先通過，再變為不通過。"
+    },
+    {
+      "id": "A20",
+      "requirement": "R20",
+      "scenario": "開啟座標與配置，查看背包定位。",
+      "expected": "只顯示背包左上角及右下角。"
+    },
+    {
+      "id": "A21",
+      "requirement": "R21",
+      "scenario": "開啟總覽，查看快捷鍵一覽。",
+      "expected": "清單可查看及更新，沒有顯示主視窗的快捷鍵欄位或項目。"
+    }
+  ],
+  "decisions": [
+    {
+      "topic": "紅綠框與首頁優先順序",
+      "status": "confirmed",
+      "value": "按鍵、座標與偵測點是否設定完成是首頁主要資訊。",
+      "reason": "本輪第 1 項。"
+    },
+    {
+      "topic": "選詞綴及填數值",
+      "status": "confirmed",
+      "value": "採交易站式搜尋選單與獨立最小值／最大值，詞綴規則移至改造石上方。",
+      "reason": "本輪第 2、3 項。"
+    },
+    {
+      "topic": "條件組合方式",
+      "status": "confirmed",
+      "value": "採交易站式多群組，包含必須命中、排除、至少命中 N 條及加權總和。",
+      "reason": "本輪選擇「加入交易站式多群組」。"
+    },
+    {
+      "topic": "設定完成的判定",
+      "status": "proposed",
+      "value": "每個功能依本次模式檢查必需的按鍵、座標、引用點及必要顏色。失效的校準或空值要顯示缺漏。已設定只代表設定齊全，執行狀態另列。",
+      "reason": "v5 有可增減點位、藥劑引用與不同製作定位方式。"
+    },
+    {
+      "topic": "查詢資料方式",
+      "status": "proposed",
+      "value": "採版本化本機索引。使用者輸入時立即查本機，詞綴資料更新時才讀取來源。",
+      "reason": "PoEDB 同一詞義有多階資料，並依類型分頁。設計階段抽查了詞綴索引、All 與戒指分類。"
+    },
+    {
+      "topic": "多值及讀取失敗",
+      "status": "proposed",
+      "value": "附加傷害等多值詞綴要顯示所比較的數字。模糊搜尋只用於找候選，製作判定依選定的詞綴和來源；辨識不明時暫停製作並指出原因。",
+      "reason": "火抗、最大火抗、穿透火抗可能同時出現在候選，卻代表不同條件。"
+    },
+    {
+      "topic": "兩項介面刪除",
+      "status": "confirmed",
+      "value": "座標與配置刪除傳送卷軸，總覽刪除顯示主視窗快捷鍵。",
+      "reason": "使用者本輪指定的兩項刪除。"
+    },
+    {
+      "topic": "卷軸設定去向",
+      "status": "proposed",
+      "value": "卷軸 X、Y 集中在滑鼠與按鍵的使用傳送卷軸功能卡。",
+      "reason": "使用者指定的是座標與配置頁的項目，卷軸功能仍需要位置。"
+    },
+    {
+      "topic": "顏色點擷取",
+      "status": "proposed",
+      "value": "選點後移動游標至遊戲畫面像素，按擷取鍵記錄遊戲內容區 X、Y 和 RGB。",
+      "reason": "回覆本輪操作問題。v8 以示例填入方式供試用。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "Q7-1",
+      "question": "實作前備妥 .NET 10 SDK。本機目前只有 .NET 6 與 8 執行階段。",
+      "blocking": false
+    },
+    {
+      "id": "Q7-2",
+      "question": "實作階段查核 PoEDB 資料取得方式。完整詞綴覆蓋與繁中物品格式以實際資料報告及樣本驗收。",
+      "blocking": false
+    }
+  ],
+  "tasks": [
+    {
+      "id": "T1",
+      "title": "設定資料與紅綠判斷",
+      "requirements": [
+        "R16"
+      ],
+      "deliverable": "定義可保存的設定、穩定點位引用及依模式判斷的缺漏原因。",
+      "verification": "卷軸缺 Y、只需按鍵、偵測點刪除或缺色碼、切換通貨路線及保存失敗均有測試。"
+    },
+    {
+      "id": "T2",
+      "title": "桌面首頁和補設定入口",
+      "requirements": [
+        "R16",
+        "R20",
+        "R21"
+      ],
+      "deliverable": "紅框置前，卡片指出缺漏並帶到對應欄位，完成後更新為綠框。 卷軸 X、Y 集中於滑鼠與按鍵，總覽快捷鍵清單移除顯示主視窗設定。",
+      "verification": "在 Windows 開啟 App 走 A16-1、A16-2，另外檢查停用狀態與窄視窗。 另走 A20、A21。"
+    },
+    {
+      "id": "T3",
+      "title": "PoEDB 詞綴資料與本機搜尋",
+      "requirements": [
+        "R18"
+      ],
+      "deliverable": "從可取得的 PoEDB 來源建立繁中詞綴索引、快照與各類覆蓋報告。相同詞義不同階級聚合，來源保留區別。",
+      "verification": "火焰搜尋可區分顯性、固定和穿透。來源更新失敗時可續用上一版。清單逐類核對 A18-3。"
+    },
+    {
+      "id": "T4",
+      "title": "物品文字解析與群組評估",
+      "requirements": [
+        "R18",
+        "R19"
+      ],
+      "deliverable": "讀取繁中物品文字，以選定詞綴判斷數值範圍和四種群組，回傳逐條原因、命中數和加權分數。",
+      "verification": "29／30／45／46 邊界、排除與多來源、至少命中和權重 75 分案例。驗證缺少詞綴與無法判定的差異。"
+    },
+    {
+      "id": "T5",
+      "title": "裝備製作頁與整體驗收",
+      "requirements": [
+        "R16",
+        "R17",
+        "R18",
+        "R19",
+        "R20",
+        "R21"
+      ],
+      "deliverable": "詞綴卡片位在改造石正上方。整合搜尋、群組編輯、規則保存與離線物品文字比對。",
+      "verification": "在 Windows 跑完十項驗收情境，另檢查重開還原、舊條件原文及索引更新後缺少的詞綴。"
+    }
+  ],
+  "changes": [
+    "在座標與配置移除傳送卷軸，背包定位只留兩角。",
+    "在總覽移除顯示主視窗快捷鍵，保留快捷鍵一覽。",
+    "互動頁示範將卷軸 X、Y 集中在原功能卡，顏色偵測定位補上 X、Y 與 RGB 的擷取說明。"
+  ],
+  "design_confirmation": "已展示 v6 設計後，使用者在對話回覆「OK 請繼續整理開發」，同意進入計畫階段。",
+  "implementation_plan": "docs/superpowers/plans/2026-11-06-keyassist-readiness-and-affix-filters.md"
+}

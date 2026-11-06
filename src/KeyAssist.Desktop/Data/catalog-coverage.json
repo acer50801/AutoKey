@@ -1,0 +1,857 @@
+{
+  "Version": "20261106-875be5139d91",
+  "ImportedAtUtc": "2026-11-06T12:57:11.9327646+00:00",
+  "RequiredSourcesAvailable": true,
+  "Candidates": 1289,
+  "SearchOnly": 461,
+  "Coverage": [
+    {
+      "Category": "\u8A5E\u7DB4\u7D22\u5F15\uFF08\u5206\u985E\u9023\u7D50\uFF09",
+      "Url": "https://poedb.tw/tw/Modifiers",
+      "Included": 101,
+      "Rejected": 0,
+      "Status": "\u5DF2\u8FA8\u8B58\u5206\u985E\u9023\u7D50",
+      "Required": true
+    },
+    {
+      "Category": "All \u524D\u5F8C\u7DB4",
+      "Url": "https://poedb.tw/tw/Modifiers_list",
+      "Included": 4331,
+      "Rejected": 1,
+      "Status": "\u5DF2\u532F\u5165 4331 \u7B46\u4F86\u6E90\u5217\uFF1B946 \u7B46\u50C5\u4F9B\u641C\u5C0B\uFF0C\u53E6\u6709\u7121\u6CD5\u89E3\u6790\u6216\u672A\u8FA8\u8B58\u985E\u578B\u7684\u5217",
+      "Required": true
+    },
+    {
+      "Category": "\u6212\u6307\u4E00\u822C\u8A5E\u7DB4",
+      "Url": "https://poedb.tw/tw/Rings#ModifiersCalc",
+      "Included": 207,
+      "Rejected": 0,
+      "Status": "\u5DF2\u532F\u5165 207 \u7B46\u4F86\u6E90\u5217\uFF1B3 \u7B46\u50C5\u4F9B\u641C\u5C0B",
+      "Required": true
+    },
+    {
+      "Category": "\u5DE5\u85DD\u53F0",
+      "Url": "https://poedb.tw/tw/Crafting_Bench",
+      "Included": 749,
+      "Rejected": 34,
+      "Status": "\u5DF2\u532F\u5165 749 \u7B46\u4F86\u6E90\u5217\uFF1B278 \u7B46\u50C5\u4F9B\u641C\u5C0B\uFF0C\u53E6\u6709\u7121\u6CD5\u89E3\u6790\u6216\u672A\u8FA8\u8B58\u985E\u578B\u7684\u5217",
+      "Required": true
+    },
+    {
+      "Category": "\u6212\u6307\u9801\u5C55\u793A\u7269\u54C1\u7684\u56FA\u5B9A\u8A5E\u7DB4",
+      "Url": "https://poedb.tw/tw/Rings",
+      "Included": 170,
+      "Rejected": 0,
+      "Status": "\u5DF2\u532F\u5165 170 \u7B46\u4F86\u6E90\u5217\uFF1B27 \u7B46\u50C5\u4F9B\u641C\u5C0B",
+      "Required": false
+    },
+    {
+      "Category": "\u7D05\u7389\u6212\u6307\u56FA\u5B9A\u8A5E\u7DB4",
+      "Url": "https://poedb.tw/tw/Ruby_Ring",
+      "Included": 1,
+      "Rejected": 0,
+      "Status": "\u5DF2\u532F\u5165 1 \u7B46\u4F86\u6E90\u5217\uFF1B0 \u7B46\u50C5\u4F9B\u641C\u5C0B",
+      "Required": true
+    },
+    {
+      "Category": "\u722A",
+      "Url": "https://poedb.tw/tw/Claws#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u5315\u9996",
+      "Url": "https://poedb.tw/tw/Daggers#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u6CD5\u6756",
+      "Url": "https://poedb.tw/tw/Wands#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u55AE\u624B\u528D",
+      "Url": "https://poedb.tw/tw/One_Hand_Swords#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u55AE\u624B\u65A7",
+      "Url": "https://poedb.tw/tw/One_Hand_Axes#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u55AE\u624B\u9318",
+      "Url": "https://poedb.tw/tw/One_Hand_Maces#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u6B0A\u6756",
+      "Url": "https://poedb.tw/tw/Sceptres#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u7B26\u7D0B\u5315\u9996",
+      "Url": "https://poedb.tw/tw/Rune_Daggers#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u7D30\u528D",
+      "Url": "https://poedb.tw/tw/Thrusting_One_Hand_Swords#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u5F13",
+      "Url": "https://poedb.tw/tw/Bows#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u9577\u6756",
+      "Url": "https://poedb.tw/tw/Staves#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u96D9\u624B\u528D",
+      "Url": "https://poedb.tw/tw/Two_Hand_Swords#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u96D9\u624B\u65A7",
+      "Url": "https://poedb.tw/tw/Two_Hand_Axes#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u96D9\u624B\u9318",
+      "Url": "https://poedb.tw/tw/Two_Hand_Maces#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u5F81\u6230\u9577\u6756",
+      "Url": "https://poedb.tw/tw/Warstaves#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u9B5A\u7AFF",
+      "Url": "https://poedb.tw/tw/Fishing_Rods#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u9805\u934A",
+      "Url": "https://poedb.tw/tw/Amulets#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u8170\u5E36",
+      "Url": "https://poedb.tw/tw/Belts#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u98FE\u54C1",
+      "Url": "https://poedb.tw/tw/Trinkets#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u624B\u5957(\u529B)",
+      "Url": "https://poedb.tw/tw/Gloves_str#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u624B\u5957(\u654F)",
+      "Url": "https://poedb.tw/tw/Gloves_dex#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u624B\u5957(\u667A)",
+      "Url": "https://poedb.tw/tw/Gloves_int#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u624B\u5957(\u529B\u654F)",
+      "Url": "https://poedb.tw/tw/Gloves_str_dex#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u624B\u5957(\u529B\u667A)",
+      "Url": "https://poedb.tw/tw/Gloves_str_int#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u624B\u5957(\u654F\u667A)",
+      "Url": "https://poedb.tw/tw/Gloves_dex_int#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u978B\u5B50(\u529B)",
+      "Url": "https://poedb.tw/tw/Boots_str#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u978B\u5B50(\u654F)",
+      "Url": "https://poedb.tw/tw/Boots_dex#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u978B\u5B50(\u667A)",
+      "Url": "https://poedb.tw/tw/Boots_int#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u978B\u5B50(\u529B\u654F)",
+      "Url": "https://poedb.tw/tw/Boots_str_dex#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u978B\u5B50(\u529B\u667A)",
+      "Url": "https://poedb.tw/tw/Boots_str_int#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u978B\u5B50(\u654F\u667A)",
+      "Url": "https://poedb.tw/tw/Boots_dex_int#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u80F8\u7532(\u529B)",
+      "Url": "https://poedb.tw/tw/Body_Armours_str#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u80F8\u7532(\u654F)",
+      "Url": "https://poedb.tw/tw/Body_Armours_dex#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u80F8\u7532(\u667A)",
+      "Url": "https://poedb.tw/tw/Body_Armours_int#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u80F8\u7532(\u529B\u654F)",
+      "Url": "https://poedb.tw/tw/Body_Armours_str_dex#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u80F8\u7532(\u529B\u667A)",
+      "Url": "https://poedb.tw/tw/Body_Armours_str_int#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u80F8\u7532(\u654F\u667A)",
+      "Url": "https://poedb.tw/tw/Body_Armours_dex_int#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u80F8\u7532(\u529B\u654F\u667A)",
+      "Url": "https://poedb.tw/tw/Body_Armours_str_dex_int#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u982D\u90E8(\u529B)",
+      "Url": "https://poedb.tw/tw/Helmets_str#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u982D\u90E8(\u654F)",
+      "Url": "https://poedb.tw/tw/Helmets_dex#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u982D\u90E8(\u667A)",
+      "Url": "https://poedb.tw/tw/Helmets_int#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u982D\u90E8(\u529B\u654F)",
+      "Url": "https://poedb.tw/tw/Helmets_str_dex#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u982D\u90E8(\u529B\u667A)",
+      "Url": "https://poedb.tw/tw/Helmets_str_int#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u982D\u90E8(\u654F\u667A)",
+      "Url": "https://poedb.tw/tw/Helmets_dex_int#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u7BAD\u888B",
+      "Url": "https://poedb.tw/tw/Quivers#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u76FE(\u529B)",
+      "Url": "https://poedb.tw/tw/Shields_str#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u76FE(\u654F)",
+      "Url": "https://poedb.tw/tw/Shields_dex#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u76FE(\u667A)",
+      "Url": "https://poedb.tw/tw/Shields_int#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u76FE(\u529B\u654F)",
+      "Url": "https://poedb.tw/tw/Shields_str_dex#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u76FE(\u529B\u667A)",
+      "Url": "https://poedb.tw/tw/Shields_str_int#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u76FE(\u654F\u667A)",
+      "Url": "https://poedb.tw/tw/Shields_dex_int#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u8D64\u7D05\u73E0\u5BF6",
+      "Url": "https://poedb.tw/tw/Crimson_Jewel#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u7FE0\u7DA0\u73E0\u5BF6",
+      "Url": "https://poedb.tw/tw/Viridian_Jewel#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u9237\u85CD\u73E0\u5BF6",
+      "Url": "https://poedb.tw/tw/Cobalt_Jewel#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u4E09\u76F8\u73E0\u5BF6",
+      "Url": "https://poedb.tw/tw/Prismatic_Jewel#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u6BBA\u622E\u4E4B\u773C\u73E0\u5BF6",
+      "Url": "https://poedb.tw/tw/Murderous_Eye_Jewel#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u52D8\u67E5\u4E4B\u773C\u73E0\u5BF6",
+      "Url": "https://poedb.tw/tw/Searching_Eye_Jewel#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u50AC\u7720\u4E4B\u773C\u73E0\u5BF6",
+      "Url": "https://poedb.tw/tw/Hypnotic_Eye_Jewel#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u6975\u61FC\u4E4B\u773C\u73E0\u5BF6",
+      "Url": "https://poedb.tw/tw/Ghastly_Eye_Jewel#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u62FC\u6E4A\u4E4B\u773C\u73E0\u5BF6",
+      "Url": "https://poedb.tw/tw/Assembled_Eye_Jewel#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u6C38\u6046\u73E0\u5BF6",
+      "Url": "https://poedb.tw/tw/Timeless_Jewel#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u751F\u547D\u85E5\u5291",
+      "Url": "https://poedb.tw/tw/Life_Flasks#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u9B54\u529B\u85E5\u5291",
+      "Url": "https://poedb.tw/tw/Mana_Flasks#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u529F\u80FD\u85E5\u5291",
+      "Url": "https://poedb.tw/tw/Utility_Flasks#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u8403\u53D6\u7269",
+      "Url": "https://poedb.tw/tw/Tinctures#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u91CB\u754C\u4E4B\u9080",
+      "Url": "https://poedb.tw/tw/Mavens_Invitation%3A_The_Feared#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u6F5B\u80FD\u4E4B\u6212",
+      "Url": "https://poedb.tw/tw/Unset_Ring#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u92FC\u9435\u85E5\u5291",
+      "Url": "https://poedb.tw/tw/Iron_Flask#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u9AB8\u9AA8\u4E4B\u6212",
+      "Url": "https://poedb.tw/tw/Bone_Ring#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u53EC\u559A\u6CD5\u6756",
+      "Url": "https://poedb.tw/tw/Convoking_Wand#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u9AA8\u88FD\u9B54\u76FE",
+      "Url": "https://poedb.tw/tw/Bone_Spirit_Shield#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u9B54\u7B26\u7687\u51A0",
+      "Url": "https://poedb.tw/tw/Runic_Crown#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u9B54\u7B26\u77ED\u9774",
+      "Url": "https://poedb.tw/tw/Runic_Sabatons#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u9B54\u7B26\u8B77\u624B",
+      "Url": "https://poedb.tw/tw/Runic_Gauntlets#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u771F\u9280\u85E5\u5291",
+      "Url": "https://poedb.tw/tw/Silver_Flask#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u718A\u65CF\u5492\u8A9E",
+      "Url": "https://poedb.tw/tw/Ursine_Charm#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u72FC\u65CF\u5492\u8A9E",
+      "Url": "https://poedb.tw/tw/Lupine_Charm#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u70CF\u9D09\u5492\u8A9E",
+      "Url": "https://poedb.tw/tw/Corvine_Charm#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u6B21\u8981\u9B54\u5076",
+      "Url": "https://poedb.tw/tw/Minor_Idol#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u5361\u746A\u85A9\u9B54\u5076",
+      "Url": "https://poedb.tw/tw/Kamasan_Idol#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u5716\u9A30\u9B54\u5076",
+      "Url": "https://poedb.tw/tw/Totemic_Idol#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u9AD8\u8CB4\u9B54\u5076",
+      "Url": "https://poedb.tw/tw/Noble_Idol#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u57CB\u846C\u9B54\u5076",
+      "Url": "https://poedb.tw/tw/Burial_Idol#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u5F81\u670D\u8005\u9B54\u5076",
+      "Url": "https://poedb.tw/tw/Conqueror_Idol#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u5951\u7D04\u66F8",
+      "Url": "https://poedb.tw/tw/Contracts#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u85CD\u5716",
+      "Url": "https://poedb.tw/tw/Blueprints#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u9ED1\u66DC\u78E8\u5200\u77F3",
+      "Url": "https://poedb.tw/tw/Obsidian_Sharpening_Stone#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u7CBE\u6E96\u7BAD\u77E2",
+      "Url": "https://poedb.tw/tw/Precise_Arrowhead#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u66B4\u88C2\u6CD5\u5E36",
+      "Url": "https://poedb.tw/tw/Burst_Band#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u5C08\u696D\u9396\u64AC",
+      "Url": "https://poedb.tw/tw/Master_Lockpick#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u92FC\u9435\u8B77\u8155",
+      "Url": "https://poedb.tw/tw/Steel_Bracers#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u5947\u8853\u611F\u77E5\u5492\u8853",
+      "Url": "https://poedb.tw/tw/Thaumaturgical_Sensing_Charm#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u5947\u8853\u9583\u5149\u7C89",
+      "Url": "https://poedb.tw/tw/Thaumetic_Flashpowder#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u5947\u8853\u6CD5\u6756",
+      "Url": "https://poedb.tw/tw/Thaumaturgical_Ward#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u5927\u5E2B\u9470\u5319\u5708",
+      "Url": "https://poedb.tw/tw/Grandmaster_Keyring#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u7D72\u7E54\u978B\u5E95",
+      "Url": "https://poedb.tw/tw/Silkweave_Sole#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u5F12\u541B\u507D\u88DD\u5957\u7D44",
+      "Url": "https://poedb.tw/tw/Regicide_Disguise_Kit#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u5947\u8853\u5674\u7BA1",
+      "Url": "https://poedb.tw/tw/Thaumetic_Blowtorch#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u7D30\u7E54\u62AB\u98A8",
+      "Url": "https://poedb.tw/tw/Whisper-woven_Cloak#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    },
+    {
+      "Category": "\u7B94\u7247\u80F8\u91DD",
+      "Url": "https://poedb.tw/tw/Foliate_Brooch#ModifiersCalc",
+      "Included": 0,
+      "Rejected": 0,
+      "Status": "\u672C\u6B21\u672A\u63D0\u4F9B\u6B64\u5206\u985E\u7684 HTML",
+      "Required": false
+    }
+  ]
+}

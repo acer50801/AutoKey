@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>按鍵輔助 v8｜總覽與裝備製作</title>
+<style>body{margin:0;padding:20px;background:#e7edf3;font:15px/1.55 system-ui,"Microsoft JhengHei",sans-serif;color:#19283b}*{box-sizing:border-box}</style>
+</head>
+<body>
+<!-- preview:start -->
+<style>
+.mock{max-width:1140px;margin:auto;color:#19283b;line-height:1.5}
+.mock *{box-sizing:border-box}
+.mock h1,.mock h2,.mock h3,.mock p{margin:0}.mock h1{font-size:clamp(22px,4vw,30px)}.mock h2{font-size:20px}.mock h3{font-size:16px}
+.mock p,.mock small{color:#4d6276}.mock .note{margin:8px 0 14px}.mock .eyebrow{font-size:12px;font-weight:700;letter-spacing:.08em}
+.screen{display:grid;grid-template-columns:170px minmax(0,1fr);border:1px solid #cad7e3;border-radius:14px;overflow:hidden;background:#f3f6f9;margin:14px 0 24px}
+.rail{background:#162638;color:#dce8f3;padding:18px 12px}.rail b{display:block;color:white;margin:0 0 14px;padding:5px 8px}.rail span{display:block;padding:7px 8px;border-radius:6px;font-size:14px}.rail .active{background:#294554;color:#aef0e3;border-left:3px solid #6ed6c0}
+.mock .content{padding:20px;min-width:0}.mock .cards,.mock .groups{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.status-card,.rule,.block,.score{border:1px solid #cbd8e4;background:white;border-radius:9px;padding:12px;min-width:0}.mock .block{margin-top:12px}
+.mock .missing{border:2px solid #b43b42;background:#fff7f7}.mock .ready{border:2px solid #238253;background:#f5fdf8}
+.mock .missing strong{color:#982f36}.mock .ready strong{color:#176241}.mock .jump{display:block;margin-top:8px;font-size:13px;color:#155e75;font-weight:650}
+.mock .rule-top,.mock .row,.mock .bar{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap}
+.mock .rule-top{margin-bottom:8px}.mock .wide{grid-column:1/-1}.mock .tag{font-size:12px;color:#40586d;background:#eaf0f5;border-radius:5px;padding:2px 6px}
+.mock .search{padding:8px 10px;border:2px solid #2a7d81;border-radius:7px 7px 0 0;color:#183846;background:#fff;margin-top:10px}
+.mock .results{border:1px solid #cbd8e4;border-top:0;border-radius:0 0 7px 7px;margin:0 0 10px;padding:0;list-style:none}.mock .results li{padding:7px 9px}.mock .results li+li{border-top:1px solid #e5edf3}.mock .results .selected{background:#e6f6f2}.mock .results .tag{display:inline-block;margin-right:5px}
+.mock .inputs{display:flex;gap:6px;flex-wrap:wrap}.mock .inputs span,.mock .control{font-size:13px;padding:5px 8px;border:1px solid #bdccdb;border-radius:6px;background:#fff;display:inline-block}.mock .control{color:#225c65;font-weight:650}
+.mock .score{font-size:14px;background:#eaf6f0;border-color:#abd2bc;margin-top:10px}.mock .score b{color:#176241}
+@media(max-width:650px){.screen{grid-template-columns:1fr}.rail{padding:8px}.rail b{margin:0;padding:4px 8px}.rail span{display:none}.rail .active{display:inline-block;margin-left:5px}.mock .content{padding:12px}}
+@media(max-width:430px){.mock .cards,.mock .groups{grid-template-columns:minmax(0,1fr)}}
+</style>
+<main class="mock">
+  <p class="eyebrow">按鍵輔助 · B 整合版 v8 · 靜態示意</p>
+  <section class="screen" aria-labelledby="overview-title">
+    <aside class="rail" aria-label="應用程式導覽"><b>按鍵輔助</b><span class="active">總覽</span><span>滑鼠與按鍵</span><span>藥劑與偵測</span><span>技能與地雷</span><span>背包與倉庫</span><span>裝備製作</span><span>座標與配置</span></aside>
+    <div class="content">
+      <div class="bar"><h1 id="overview-title">設定檢查</h1><div class="inputs"><span>暫停全部</span><span>停止全部</span></div></div>
+      <p class="note">紅框有設定缺漏，綠框已設定。以下為示例，依目前所選功能的必要項目檢查。</p>
+      <div class="cards">
+        <article class="status-card missing"><strong>未設定</strong><h3>使用傳送卷軸</h3><small>缺少卷軸位置 X、Y</small><span class="jump">前往滑鼠與按鍵 ›</span></article>
+        <article class="status-card missing"><strong>未設定</strong><h3>藥劑 2 效果偵測</h3><small>尚未選擇偵測點</small><span class="jump">前往藥劑與偵測 ›</span></article>
+        <article class="status-card ready"><strong>已設定</strong><h3>滑鼠連點</h3><small>觸發鍵已設定 · 無需座標</small><span class="jump">檢視滑鼠與按鍵 ›</span></article>
+        <article class="status-card ready"><strong>已設定</strong><h3>藥劑 1 效果偵測</h3><small>輸出鍵、點位座標與有效顏色已設定</small><span class="jump">檢視顏色偵測定位 ›</span></article>
+      </div>
+    </div>
+  </section>
+  <section class="screen" aria-labelledby="craft-title">
+    <aside class="rail" aria-label="應用程式導覽"><b>按鍵輔助</b><span>總覽</span><span>滑鼠與按鍵</span><span>藥劑與偵測</span><span>技能與地雷</span><span>背包與倉庫</span><span class="active">裝備製作</span><span>座標與配置</span></aside>
+    <div class="content">
+      <h1 id="craft-title">裝備製作</h1>
+      <div class="block">製作控制、限制與紀錄</div>
+      <section class="block" aria-labelledby="rules-title">
+        <div class="bar"><h2 id="rules-title">詞綴條件與比對規則</h2><span class="control">＋ 新增群組</span></div>
+        <p class="note">所有啟用的群組都通過才算達標。以下群組和數值為示例。</p>
+        <div class="groups">
+          <article class="rule wide">
+            <div class="rule-top"><h3>必須命中</h3><span class="tag">群組 1</span></div>
+            <div class="search">搜尋詞綴　火焰</div>
+            <ul class="results" aria-label="火焰的搜尋結果示例">
+              <li class="selected"><span class="tag">顯性・後綴</span> +#% 火焰抗性</li>
+              <li><span class="tag">固定</span> +#% 火焰抗性</li>
+              <li><span class="tag">顯性・前綴</span> 傷害穿透 #% 火焰抗性</li>
+            </ul>
+            <div class="row"><strong>選定　+#% 火焰抗性（顯性）</strong><div class="inputs"><span>最小值 30%</span><span>最大值 45%</span></div></div>
+          </article>
+          <article class="rule"><div class="rule-top"><h3>排除</h3><span class="tag">群組 2</span></div><p>任一條命中就淘汰</p><small>例如排除顯性最大魔力</small></article>
+          <article class="rule"><div class="rule-top"><h3>至少命中 1 條</h3><span class="tag">群組 3</span></div><p>最大生命 ≥ 60 或最大能量護盾 ≥ 30</p></article>
+          <article class="rule wide"><div class="rule-top"><h3>加權總和</h3><span class="tag">群組 4</span></div><div class="row"><span>火焰抗性 × 1 ＋ 最大生命 × 0.5</span><div class="inputs"><span>最低分 70</span><span>最高分 —</span></div></div><div class="score">示例物品　火焰抗性 35%、最大生命 80 → <b>75 分 · 本群組通過</b></div></article>
+        </div>
+      </section>
+      <section class="block"><h2>改造石洗詞綴</h2><p>使用上方詞綴群組判斷結果。</p></section>
+    </div>
+  </section>
+</main>
+<!-- preview:end -->
+</body>
+</html>
